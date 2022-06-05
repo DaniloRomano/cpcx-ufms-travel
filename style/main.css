@@ -1,0 +1,48 @@
+body{
+    color: var(--font-color-black);
+}
+
+@media screen and (min-width: 540px) {
+  header {   
+    background: url("../images/estrutura/header.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;    
+    background-position-y: -200px;
+  }
+
+  .background-primary {
+    background-color: var(--primary-theme-color-transparent);    
+  }
+}
+@media screen and (max-width: 539px) {
+header{
+    background-color: var(--primary-theme-color);
+}
+
+  .background-primary {
+    background-color: var(--primary-theme-color);
+  }
+}
+
+.form-control {
+  margin-bottom: 5px;
+}
+
+.menu-ativo {
+  border-bottom: 5px solid var(--destaque-color);
+  color: var(--destaque-color) !important;
+}
+
+.nav-link:hover {
+  border-bottom: 5px solid var(--destaque-color);
+  color: var(--destaque-color) !important;
+}
+
+.bg-destaque{
+    background-color: var(--destaque-color);    
+}
+
+.bg-destaque:hover{
+    background-color: var(--destaque-color-hover);
+    border-color: transparent;
+}
