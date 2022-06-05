@@ -1,0 +1,11 @@
+:root{
+    --primary-theme-color-dark: #0560A1;
+    --primary-theme-color: #033A61;
+    --primary-theme-color-transparent: #033A6188;
+    --primary-theme-color-light: #0677C7;
+    --primary-font-color: #EEEEEE;
+    --secundary-theme-color: #ebeaffc2;
+    --destaque-color: #f8db1c;
+    --destaque-color-hover: #d1b70e;
+    --font-color-black: #333333;
+}

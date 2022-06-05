@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UFMS Travel - Nossos Pacotes</title>
+      <!-- CSS only -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <!-- Bootstrap Font Icon CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1/font/bootstrap-icons.css" />
+  <link href="/style/variables.css" rel="stylesheet" type="text/css" />
+  <link href="/style/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header class="container-fluid px-0 pb-5 shadow"> 
+      <nav class="navbar navbar-expand-sm navbar-dark background-primary m-md-0 p-md-0 shadow sticky-top">
+          <div class="container">
+              <div class="navbar-brand"><h3 >UFMS Travel</h3></div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="navbar-collapse collapse" id="collapsibleNavbar">
+                  <ul class="navbar-nav d-flex flex-row justify-content-between ms-md-auto">
+                      <li>
+                          <a href="/"
+                          class="nav-link text-white d-flex flex-column flex-md-row
+                          justify-content-center justify-content-md-between px-md-4">
+                              <i class="bi bi-house d-block mx-auto mb-1 me-md-3"></i>
+                              Home
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="/pages/pacotes/"
+                              class="nav-link text-white d-flex flex-column flex-md-row
+                              justify-content-center justify-content-md-between px-md-4 menu-ativo">
+                              <i class="bi bi-paint-bucket d-block mx-auto mb-1 me-md-3"></i>
+                              Pacotes
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="/pages/sobre/"
+                             class="nav-link text-white d-flex flex-column flex-md-row
+                              justify-content-center justify-content-md-between px-md-4">
+                              <i class="bi bi-info d-block mx-auto mb-1 me-md-3"></i>
+                              Sobre
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="/pages/contato/"
+                             class="nav-link text-white d-flex flex-column flex-md-row
+                              justify-content-center justify-content-md-between px-md-4">
+                              <i class="bi bi-mailbox d-block mx-auto mb-1 me-md-3"></i>
+                              Contato
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>      
+      <form>
+          <div class="container">
+              <div class="row px-md-5 py-4 text-light">
+                  <div class="col-md-12 text-center">
+                      <h3>FAÇA SUA VIAGEM DOS SONHOS</h3>
+                  </div>
+              </div>
+              <div class="row px-md-5 py-md-2 my-3">
+                  <div class="col-md-3 form-floating">                        
+                          <input type="search" id="txtDestino" name="txtDestino" class="form-control col-md-3"
+                              placeholder="Procurar destino" />                            
+                          <label for="txtDestino" class="mx-3">Procurar destino</label>                        
+                  </div>
+                  <div class="col-md-3 form-floating">
+                      <input type="date" name="txtDataIda" class="form-control col-md-3" placeholder="Data de ida" value=""/>
+                      <label for="txtDataIda" class="mx-3">Data da ida</label>
+                  </div>
+                  <div class="col-md-3 form-floating">
+                      <input type="date" name="txtDataVolta" class="form-control col-md-3" placeholder="Data da Volta" value=""/>
+                      <label for="txtDataIda" class="mx-3">Data da Volta</label>
+                  </div>
+                  <div class="col-md-3 text-center mb-3">
+                      <button class="btn bg-destaque py-3 px-5 fw-bold">Pesquisar</button>
+                  </div>
+              
+              </div>
+          </div>
+      </form>
+  </header>  
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
