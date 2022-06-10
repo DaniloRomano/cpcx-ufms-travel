@@ -39,10 +39,38 @@ header{
 }
 
 .bg-destaque{
-    background-color: var(--destaque-color);    
+    background-color: var(--destaque-color); 
+    color: var(--primary-theme-color);   
 }
 
 .bg-destaque:hover{
     background-color: var(--destaque-color-hover);
     border-color: transparent;
+}
+
+.bg-theme-primary{
+  background-color: var(--primary-theme-color);
+}
+
+.bg-black{
+  background-color: var(--black-color);
+}
+
+.servicos .bi{
+  font-size: 80px;
+}
+
+.destino{
+  height: 100vh;
+  position: relative;
+}
+
+.maragogi{
+  background: url('../images/destinos/maragogi-1.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.border-theme-primary{
+  border: 1px solid var(--primary-theme-color);
 }
