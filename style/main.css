@@ -7,7 +7,7 @@ body{
     background: url("../images/estrutura/header.jpg") no-repeat;
     background-size: cover;
     background-attachment: fixed;    
-    background-position-y: -200px;
+    background-position-y: -15rem;
   }
 
   .background-primary {
@@ -22,19 +22,24 @@ header{
   .background-primary {
     background-color: var(--primary-theme-color);
   }
+
+  .imagem-promocao{
+    height: 20rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .form-control {
-  margin-bottom: 5px;
+  margin-bottom: .5rem;
 }
 
 .menu-ativo {
-  border-bottom: 5px solid var(--destaque-color);
+  border-bottom: .5rem solid var(--destaque-color);
   color: var(--destaque-color) !important;
 }
 
 .nav-link:hover {
-  border-bottom: 5px solid var(--destaque-color);
+  border-bottom: .5rem solid var(--destaque-color);
   color: var(--destaque-color) !important;
 }
 
@@ -43,7 +48,12 @@ header{
     color: var(--primary-theme-color);   
 }
 
-.bg-destaque:hover{
+.btn-destaque{
+  background-color: var(--destaque-color);
+  color: var(--primary-theme-color)
+}
+
+.btn-destaque:hover{
     background-color: var(--destaque-color-hover);
     border-color: transparent;
 }
@@ -57,20 +67,78 @@ header{
 }
 
 .servicos .bi{
-  font-size: 80px;
+  font-size: 6rem;
 }
 
 .destino{
-  height: 100vh;
+  height: auto;
   position: relative;
 }
 
 .maragogi{
-  background: url('../images/destinos/maragogi-1.jpg');
+  background: url('../images/destinos/maragogi-1.jpg') no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 
 .border-theme-primary{
-  border: 1px solid var(--primary-theme-color);
+  border: 1px solid var(--primary-theme-color-transparent);
+}
+
+.imagem-promocao{
+  background:url('../images/destinos/maragogi-2.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50%;  
+}
+
+.font-contatos{
+  font-size: 3rem;  
+}
+
+.sobre p{
+  text-align: justify;
+}
+
+.pacotes .card{
+  cursor: pointer;
+}
+
+.pacotes .card-maragogi{
+  background: url("../images/destinos/maragogi-1.jpg") no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.pacotes .card-jericoacoara{
+  background: url("../images/destinos/jericoacoara.jpg") no-repeat;
+  background-size: cover;  
+}
+
+.pacotes .card-jordao{
+  background: url("../images/destinos/jordao.png") no-repeat;
+  background-size: cover;  
+}
+
+.pacotes .card-paris{
+  background: url("../images/destinos/paris.jpg") no-repeat;
+  background-size: cover;  
+}
+
+.pacotes .card-novayork{
+  background: url("../images/destinos/novayork.jpg") no-repeat;
+  background-size: cover;  
+}
+
+.pacotes .card-holanda{
+  background: url("../images/destinos/holanda.jpg") no-repeat;
+  background-size: cover;  
+}
+
+.pacotes .card-noruega{
+  background: url("../images/destinos/noruega.jpg") no-repeat;
+  background-size: cover;  
+}
+
+footer .bi{
+  font-size: 4rem;
 }

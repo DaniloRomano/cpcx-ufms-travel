@@ -1,23 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UFMS Travel - Contato</title>
-        <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
     <!-- Bootstrap Font Icon CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1/font/bootstrap-icons.css" />
     <link href="/style/variables.css" rel="stylesheet" type="text/css" />
     <link href="/style/main.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
-    <header class="container-fluid px-0 pb-5 shadow"> 
-        <nav class="navbar navbar-expand-sm navbar-dark background-primary m-md-0 p-md-0 shadow sticky-top">
+
+    <header class="container-fluid px-0 pb-5 shadow">
+        <nav class="navbar navbar-expand-sm navbar-dark background-primary m-md-0 p-md-0 shadow">
             <div class="container">
-                <div class="navbar-brand"><h3 >UFMS Travel</h3></div>
+                <div class="navbar-brand">
+                    <h3>UFMS Travel</h3>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
@@ -25,32 +30,28 @@
                 <div class="navbar-collapse collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav d-flex flex-row justify-content-between ms-md-auto">
                         <li>
-                            <a href="/"
-                            class="nav-link text-white d-flex flex-column flex-md-row
+                            <a href="/" class="nav-link text-white d-flex flex-column flex-md-row
                             justify-content-center justify-content-md-between px-md-4">
                                 <i class="bi bi-house d-block mx-auto mb-1 me-md-3"></i>
                                 Home
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/pages/pacotes/"
-                                class="nav-link text-white d-flex flex-column flex-md-row
+                            <a href="/pages/pacotes/" class="nav-link text-white d-flex flex-column flex-md-row
                                 justify-content-center justify-content-md-between px-md-4">
                                 <i class="bi bi-paint-bucket d-block mx-auto mb-1 me-md-3"></i>
                                 Pacotes
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/pages/sobre/"
-                               class="nav-link text-white d-flex flex-column flex-md-row
+                            <a href="/pages/sobre/" class="nav-link text-white d-flex flex-column flex-md-row
                                 justify-content-center justify-content-md-between px-md-4">
                                 <i class="bi bi-info d-block mx-auto mb-1 me-md-3"></i>
                                 Sobre
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/pages/contato/"
-                               class="nav-link text-white d-flex flex-column flex-md-row
+                            <a href="/pages/contato/" class="nav-link text-white d-flex flex-column flex-md-row
                                 justify-content-center justify-content-md-between px-md-4 menu-ativo">
                                 <i class="bi bi-mailbox d-block mx-auto mb-1 me-md-3"></i>
                                 Contato
@@ -59,40 +60,120 @@
                     </ul>
                 </div>
             </div>
-        </nav>      
+        </nav>
         <form>
             <div class="container">
                 <div class="row px-md-5 py-4 text-light">
                     <div class="col-md-12 text-center">
-                        <h3>FAÇA SUA VIAGEM DOS SONHOS</h3>
+                        <h3>ENCONTRE O SEU PACOTE DE VIAGEM</h3>
                     </div>
                 </div>
                 <div class="row px-md-5 py-md-2 my-3">
-                    <div class="col-md-3 form-floating">                        
-                            <input type="search" id="txtDestino" name="txtDestino" class="form-control col-md-3"
-                                placeholder="Procurar destino" />                            
-                            <label for="txtDestino" class="mx-3">Procurar destino</label>                        
+                    <div class="col-md-3 form-floating">
+                        <input type="search" id="txtDestino" name="txtDestino" class="form-control col-md-3"
+                            placeholder="Procurar destino" required />
+                        <label for="txtDestino" class="mx-3">Procurar destino</label>
                     </div>
                     <div class="col-md-3 form-floating">
-                        <input type="date" name="txtDataIda" class="form-control col-md-3" placeholder="Data de ida" value=""/>
+                        <input type="date" name="txtDataIda" class="form-control col-md-3" placeholder="Data de ida"
+                            value="" />
                         <label for="txtDataIda" class="mx-3">Data da ida</label>
                     </div>
                     <div class="col-md-3 form-floating">
-                        <input type="date" name="txtDataVolta" class="form-control col-md-3" placeholder="Data da Volta" value=""/>
+                        <input type="date" name="txtDataVolta" class="form-control col-md-3" placeholder="Data da Volta"
+                            value="" />
                         <label for="txtDataIda" class="mx-3">Data da Volta</label>
                     </div>
                     <div class="col-md-3 text-center mb-3">
-                        <button class="btn bg-destaque py-3 px-5 fw-bold">Pesquisar</button>
+                        <button class="btn btn-destaque py-3 px-5 w-100 fw-bold">Pesquisar</button>
                     </div>
-                
+
                 </div>
             </div>
         </form>
-    </header>  
-       
+    </header>
+    <main class="container-fluid p-0">
+        <div class="bg-destaque py-4 text-center">
+            <h2>Nos mande uma mensagem</h2>
+        </div>
+        <section class="container contato p-5">
+            <div class="row g-4">
+                <div class="col-12 col-sm-12 col-md-8 px-md-5">
+                    <form method="GET" action="#" class="needs-validation" novalidate>
+                        <label for="txtNome" class="form-label">
+                            Informe seu nome <span class="text-muted">*</span>
+                        </label>
+                        <input type="text" name="txtNome" id="txtNome" class="form-control" required />
+                        <div class="invalid-feedback">
+                            Precisamos saber seu nome
+                        </div>
+                        <label for="txtEmail" class="form-label">
+                            Informe seu e-mail <span class="text-muted">*</span>
+                        </label>
+                        <input type="text" name="txtEmail" id="txtEmail" class="form-control" required />
+                        <div class="invalid-feedback">
+                            Informe seu e-mail para que possamos retornar
+                        </div>
+                        <label for="txtMensagem" class="form-label">Digite sua mensagem <span
+                                class="text-muted">*</span></label>
+                        <textarea name="txtMensagem" id="txtMensagem" cols="30" rows="10" class="form-control"
+                            required></textarea>
+                        <div class="invalid-feedback">
+                            Conte-nos o que precisa e vamos resolver
+                        </div>
+                        <hr class="my-4" />
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="chkNotificacao">
+                            <label class="form-check-label" for="chkNotificacao">Desejo receber mensagens com
+                                novidades.</label>
+                        </div>
+                        <hr class="my-4" />
+                        <button class="w-100 btn btn-primary btn-lg" type="submit">Enviar mensagem</button>
+                    </form>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4">
+                    <h4>Nossos contatos</h4>
+                    <p class="list-group-item"><em class="bi bi-telephone-fill me-4"></em><strong>(99) 99999-9999
+                            (SAC)</strong></p>
+                    <p class="list-group-item"><em class="bi bi-telephone-fill me-4"></em><strong>(99)
+                            99999-9999</strong></p>
+                    <p class="list-group-item"><em class="bi bi-telephone-fill me-4"></em><strong>(99)
+                            99999-9999</strong></p>
+                    <p class="list-group-item"><em
+                            class="bi bi-mailbox2 me-4"></em><strong>fale-conosco@travel.viagem</strong></p>
+                    <ul class="list-unstyled d-flex flex-row justify-content-around font-contatos">
+                        <li><a class="link-dark" href="#"><em class="bi bi-facebook"></em></a></li>
+                        <li><a class="link-dark" href="#"><em class="bi bi-instagram"></em></a></li>
+                        <li><a class="link-dark " href="#"><em class="bi bi-youtube"></em></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-theme-primary p-5">
+        <div class="container text-light">
+            <div class="row">
+                <div class="offset-md-4 col-12 col-md-4 offset-md-4">
+                    <span class="d-block text-center">Nos siga nas redes sociais<span />
+                        <ul class="list-unstyled d-flex flex-row justify-content-around text-light">
+                            <li><a class="link-light " href="#"><em class="bi bi-facebook"></em></a></li>
+                            <li><a class="link-light " href="#"><em class="bi bi-instagram"></em></a></li>
+                            <li><a class="link-light " href="#"><em class="bi bi-youtube"></em></a></li>
+                            <li><a class="link-light " href="#"><em class="bi bi-mailbox2"></em></a></li>
+                        </ul>
+
+                </div>
+                <div class="col-12 text-center">
+                    <span>Copyright - Todos os direitos reservados - 2022</span>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
+    <script src="../../js/validacao-formulario.js" type="text/javascript"></script>
 </body>
+
 </html>
