@@ -200,18 +200,37 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalLongtitle">Detalhes do pacote</h5>                    
+                    <h5 class="modal-title" id="modalLongtitle"></h5>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <h2><b>Valor:</b>&nbsp;R$ 563,59</h2>
+                    <div class="input-group mb-3">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2">Quantidade</span>
+                        </div>
+                        <input type="number" class="form-control" placeholder="Quantidade de pacotes"
+                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">Forma de pagamento</label>
+                        </div>
+                        <select class="form-control" id="inputGroupSelect01">
+                            <option selected>Selecione...</option>
+                            <option value="1">Cartão de crédito</option>
+                            <option value="2">Boleto Bancário</option>
+                            <option value="3">PIX</option>
+                        </select>
+                    </div>
+
                 </div>
-                <div class="modal-footer">
-                    <button type="button" id="btnClose" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn btn-destaque fw-bold" id="btnComprar"><em class="bi bi-cart"></em> Comprar</button>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- JavaScript Bundle with Popper -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -219,16 +238,24 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
     <script>
-        (function(){
+        (function () {
             $('.pacotes .card').click(abrirModal);
 
-            $('#btnClose').click(fecharModal)
+            $('#btnComprar').click(fecharModal);
 
-            function abrirModal(){                
+            function abrirModal(card) {
+                let modalTitle = getTextCard(card);
+                $("#modalLongtitle").text(modalTitle);
                 $("#pacotesModal").modal('show');
             }
 
-            function fecharModal(){
+            function getTextCard(card) {
+                let texto = $(card.target).find('h2').text();
+                if (texto !== '') return texto;
+                return card.target.innerHTML;
+            }
+
+            function fecharModal() {
                 $("#pacotesModal").modal('hide');
             }
         })();
